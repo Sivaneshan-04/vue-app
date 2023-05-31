@@ -3,7 +3,7 @@
     <ion-header>
       <ion-toolbar>
       <ion-buttons slot="start">
-        <ion-back-button :default-href="previousPage"></ion-back-button>
+        <ion-back-button :default-href="previousPageLink"></ion-back-button>
       </ion-buttons>
         <ion-title>{{ pageTitle }}</ion-title>
       </ion-toolbar>
@@ -26,7 +26,7 @@ import {
 } from "@ionic/vue";
 
 export default {
-  props: ["pageTitle","previousPage"],
+  props: ["pageTitle","previousPageLink"],
 
   components: {
     IonPage,
