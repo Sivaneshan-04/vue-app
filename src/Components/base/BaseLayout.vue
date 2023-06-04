@@ -6,6 +6,9 @@
         <ion-back-button :default-href="previousPageLink"></ion-back-button>
       </ion-buttons>
         <ion-title>{{ pageTitle }}</ion-title>
+      <ion-buttons slot="end">
+        <slot name="action-end"/>
+      </ion-buttons>
       </ion-toolbar>
     </ion-header>
     <ion-content>
